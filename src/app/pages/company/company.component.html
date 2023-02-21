@@ -1,0 +1,79 @@
+<div class="header bg-gradient-default pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body"></div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-12 mb-5 mb-xl-0">
+      <div class="card shadow">
+        <div class="card-header bg-transparent">
+          <div class="row align-items-center">
+            <div class="col">
+              <h2 class="mb-0">Company</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <ul ngbNav #nav="ngbNav" class="nav-tabs">
+            <li ngbNavItem>
+              <a ngbNavLink>Setup</a>
+              <ng-template ngbNavContent class="tab-content"
+                >Setup content...</ng-template
+              >
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Organization</a>
+              <ng-template class="tab-content" ngbNavContent
+                >Organization content...</ng-template
+              >
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Job Titles</a>
+              <ng-template class="tab-content" ngbNavContent
+                >Job Titles content...</ng-template
+              >
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Employees</a>
+              <ng-template class="tab-content" ngbNavContent
+                ><employee></employee
+              ></ng-template>
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Business Unit</a>
+              <ng-template class="tab-content" ngbNavContent
+                >Business Unit content...</ng-template
+              >
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Departments</a>
+              <ng-template class="tab-content" ngbNavContent
+                >Departments content...</ng-template
+              >
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Groups</a>
+              <ng-template class="tab-content" ngbNavContent
+                >Groups content...</ng-template
+              >
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Teams</a>
+              <ng-template class="tab-content" ngbNavContent
+                >Teams content...</ng-template
+              >
+            </li>
+            <li ngbNavItem>
+              <a ngbNavLink>Analytics</a>
+              <ng-template class="tab-content" ngbNavContent
+                >Analytics content...</ng-template
+              >
+            </li>
+          </ul>
+          <div [ngbNavOutlet]="nav"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
