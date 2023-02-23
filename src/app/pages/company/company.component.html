@@ -15,27 +15,55 @@
           </div>
         </div>
         <div class="card-body">
-          <div>Buttons .....</div>
-          <div *ngFor="let tab of tabs" class="d-inline-block">
-            <button class="btn btn-m btn-primary">{{ tab.label }}</button>
+          <div *ngFor="let tab of tabs" class="d-inline-block mb-4">
+            <button
+              class="btn btn-m btn-primary ml-2 mb-2"
+              [ngClass]="{ active: tab.active }"
+              (click)="setActiveTab(tab)"
+            >
+              {{ tab.label }}
+            </button>
           </div>
-
           <div class="background bg-primary"></div>
-          <div class="container-fluid mt--7">
-            <div class="row">
-              <div class="col-xl-12 mb-5 mb-xl-0">
-                <div class="card shadow">
-                  <div class="card-header">
-                    <div class="row align-items-center">
-                      <div class="col">
-                        <h2 class="mb-0">Search Employees</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ng-container *ngIf="activeTab === 'Setup'">
+            <setup></setup>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Organization'">
+            <organization></organization>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Employees'">
+            <employees></employees>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Business Units'">
+            <business-unit></business-unit>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Departments'">
+            <departments></departments>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Division'">
+            <division></division>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Job Titles'">
+            <job-title></job-title>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Cost Center'">
+            <cost-center></cost-center>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Groups'">
+            <groups></groups>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Teams'">
+            <team></team>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Contracts'">
+            <contract></contract>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Analytics'">
+            <analytics></analytics>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Contracts'">
+            <contracts></contracts>
+          </ng-container>
         </div>
       </div>
     </div>

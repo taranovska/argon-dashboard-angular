@@ -11,13 +11,25 @@ export class CompanyComponent implements OnInit {
     { label: "Setup", link: "Setup" },
     { label: "Organization", link: "Organization" },
     { label: "Employees", link: "Employees" },
-    { label: "Business Unit", link: "BusinessUnit" },
+    { label: "Business Units", link: "BusinessUnits" },
     { label: "Departments", link: "Departments" },
     { label: "Division", link: "Division" },
-    { label: "Job Title", link: "Job Title" },
+    { label: "Job Titles", link: "Job Titles" },
     { label: "Cost Center", link: "Cost Center" },
+    { label: "Groups", link: "Groups" },
+    { label: "Teams", link: "Teams" },
+    { label: "Analytics", link: "Analytics" },
+    { label: "Contracts", link: "Contracts" },
   ];
+
+  activeTab = this.tabs[0].label;
+
   constructor() {}
 
   ngOnInit() {}
+
+  setActiveTab(tab) {
+    this.activeTab = tab.label;
+    console.log(this.activeTab);
+  }
 }
