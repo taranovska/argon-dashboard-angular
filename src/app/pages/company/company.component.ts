@@ -1,11 +1,11 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "app-company",
   templateUrl: "./company.component.html",
   styleUrls: ["./company.component.scss"],
 })
-export class CompanyComponent implements OnInit {
+export class CompanyComponent {
   tabs = [
     { label: "Setup", link: "Setup" },
     { label: "Organization", link: "Organization" },
@@ -24,8 +24,6 @@ export class CompanyComponent implements OnInit {
   activeTab = this.tabs[0].label;
 
   constructor() {}
-
-  ngOnInit() {}
 
   setActiveTab(tab) {
     this.activeTab = tab.label;
