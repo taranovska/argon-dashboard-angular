@@ -1,0 +1,175 @@
+<div class="header bg-primary pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body"></div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-12 mb-5 mb-xl-0">
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h2 class="mb-0">Demo Template Components</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <div ngbDropdown class="d-inline-block">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="dropdownBasic1"
+                  ngbDropdownToggle
+                >
+                  Layout Menu
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                  <ng-container *ngFor="let layoutMenuTab of layoutMenuTabs"
+                    ><button
+                      ngbDropdownItem
+                      (click)="setActiveTab(layoutMenuTab)"
+                    >
+                      {{ layoutMenuTab }}
+                    </button></ng-container
+                  >
+                </div>
+              </div>
+              <div ngbDropdown class="d-inline-block">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="dropdownBasic2"
+                  ngbDropdownToggle
+                >
+                  Forms Menu
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                  <ng-container *ngFor="let formsMenuTab of formsMenuTabs"
+                    ><button
+                      ngbDropdownItem
+                      (click)="setActiveTab(formsMenuTab)"
+                    >
+                      {{ formsMenuTab }}
+                    </button></ng-container
+                  >
+                </div>
+              </div>
+              <div ngbDropdown class="d-inline-block">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="dropdownBasic3"
+                  ngbDropdownToggle
+                >
+                  Pages Menu
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic3">
+                  <button
+                    ngbDropdownItem
+                    *ngFor="let pagesMenuTab of pagesMenuTabs"
+                    (click)="setActiveTab(pagesMenuTab)"
+                  >
+                    {{ pagesMenuTab }}
+                  </button>
+                </div>
+              </div>
+              <div ngbDropdown class="d-inline-block">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="dropdownBasic4"
+                  ngbDropdownToggle
+                >
+                  Icons
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic4">
+                  <button
+                    ngbDropdownItem
+                    *ngFor="let iconsMenuTab of iconsMenuTabs"
+                    (click)="setActiveTab(iconsMenuTab)"
+                  >
+                    {{ iconsMenuTab }}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="background bg-primary"></div>
+          <ng-container *ngIf="activeTab === 'Grid Layout'">
+            <app-gridLayout></app-gridLayout>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Card Layout'">
+            <app-cardLayout></app-cardLayout>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Accordion'">
+            <app-accordion></app-accordion>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Offcanvas'">
+            <app-offcanvas></app-offcanvas>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Widgets'">
+            <app-widgets></app-widgets>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Alerts'">
+            <app-alerts></app-alerts>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Modal Windows'">
+            <app-modal-windows></app-modal-windows>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Timeline'">
+            <app-timeline></app-timeline>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Profile'">
+            <app-profile></app-profile>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Product Compare'">
+            <app-product-compare></app-product-compare>
+          </ng-container>
+          <ng-container *ngIf="activeTab === 'Font Awesome Icons'">
+            <app-icons-card></app-icons-card>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="header bg-primary pb-8 pt-5 pt-md-8"> 
+  <div class="container-fluid">
+    <div class="header-body"></div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="col-xl-12 mb-5 mb-xl-0">
+      <div class="card shadow">
+        <div class="card-header">
+          <div class="row align-items-center">
+            <div class="col">
+              <h2 class="mb-0">Examples</h2>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div ngbDropdown class="d-inline-block">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              id="dropdownBasic1"
+              ngbDropdownToggle
+            >
+              Toggle dropdown
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>Action - 1</button>
+              <button ngbDropdownItem>Another Action</button>
+              <button ngbDropdownItem>Something else is here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->

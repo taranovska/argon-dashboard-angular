@@ -1,3 +1,13 @@
+import { ProductCompareComponent } from "./../../components/product-compare/product-compare.component";
+import { ProfileComponent } from "./../../components/profile/profile.component";
+import { TimelineComponent } from "./../../components/timeline/timeline.component";
+import { ModalWindowsComponent } from "./../../components/modal-windows/modal-windows.component";
+import { AlertsComponent } from "./../../components/alerts/alerts.component";
+import { OffcanvasComponent } from "./../../components/offcanvas/offcanvas.component";
+import { WidgetsComponent } from "./../../components/widgets/widgets.component";
+import { GridLayoutComponent } from "./../../components/grid-layout/grid-layout.component";
+import { ExamplesComponent } from "./../../pages/examples/examples.component";
+import { DropdownComponent } from "./../../components/dropdown/dropdown.component";
 import { ContractComponent } from "./../../components/contract-tab/contract.component";
 import { AnalyticsComponent } from "./../../components/analytics-tab/analytics.component";
 import { GroupsComponent } from "./../../components/groups-tab/groups.component";
@@ -5,7 +15,8 @@ import { DepartmentsComponent } from "../../components/departments-tab/departmen
 import { BusinessUnitComponent } from "./../../components/business-unit-tab/business-unit.component";
 import { TeamComponent } from "./../../components/teams-tab/team.component";
 import { CostCenterComponent } from "./../../components/cost-center-tab/cost-center";
-import { DivisionComponent } from "./../../components/division-tab/division.component";
+import { DivisionComponent } from "../../components/departments-tab/division-tab/division.component";
+
 import { EmployeesComponent } from "./../../components/employees-tab/employees.component";
 import { OrganizationComponent } from "./../../components/organization-tab/organization.component";
 import { SetupComponent } from "../../components/setup-tab/setup.component";
@@ -27,6 +38,9 @@ import { TablesComponent } from "../../pages/tables/tables.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ComponentsModule } from "../../components/components.module";
 import { JobTitleComponent } from "src/app/components/job-titles-tab/job-title.component";
+import { IconsCardComponent } from "src/app/components/icons/icons/icons.component";
+import { CardLayoutComponent } from "src/app/components/card-layout/card-layout.component";
+import { AccordionComponent } from "src/app/components/accordion/accordion.component";
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -34,14 +48,17 @@ import { JobTitleComponent } from "src/app/components/job-titles-tab/job-title.c
     DashboardComponent,
     UserProfileComponent,
     CompanyComponent,
+    ExamplesComponent,
     TablesComponent,
     IconsComponent,
     MapsComponent,
     SetupComponent,
+    IconsComponent,
     EmployeesComponent,
     BusinessUnitComponent,
     DepartmentsComponent,
     DivisionComponent,
+    DropdownComponent,
     JobTitleComponent,
     CostCenterComponent,
     GroupsComponent,
@@ -49,6 +66,19 @@ import { JobTitleComponent } from "src/app/components/job-titles-tab/job-title.c
     OrganizationComponent,
     AnalyticsComponent,
     ContractComponent,
+    IconsCardComponent,
+    GridLayoutComponent,
+    CardLayoutComponent,
+    AccordionComponent,
+    OffcanvasComponent,
+    AlertsComponent,
+    ModalWindowsComponent,
+    TimelineComponent,
+    ProfileComponent,
+    ProductCompareComponent,
+    WidgetsComponent,
+    AlertsComponent,
+    ModalWindowsComponent,
   ],
   imports: [
     CommonModule,

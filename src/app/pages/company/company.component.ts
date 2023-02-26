@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { MatButtonModule } from "@angular/material/button";
 
 @Component({
   selector: "app-company",
@@ -30,6 +29,5 @@ export class CompanyComponent implements OnInit {
 
   setActiveTab(tab) {
     this.activeTab = tab.label;
-    console.log(this.activeTab);
   }
 }
