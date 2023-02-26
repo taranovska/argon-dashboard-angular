@@ -18,6 +18,7 @@ import { CostCenterComponent } from "./../../components/cost-center-tab/cost-cen
 import { DivisionComponent } from "../../components/departments-tab/division-tab/division.component";
 
 import { EmployeesComponent } from "./../../components/employees-tab/employees.component";
+import { EmployeeComponent } from "src/app/components/employee-table/employee.component";
 import { OrganizationComponent } from "./../../components/organization-tab/organization.component";
 import { SetupComponent } from "../../components/setup-tab/setup.component";
 import { CompanyComponent } from "./../../pages/company/company.component";
@@ -55,6 +56,7 @@ import { AccordionComponent } from "src/app/components/accordion/accordion.compo
     SetupComponent,
     IconsComponent,
     EmployeesComponent,
+    EmployeeComponent,
     BusinessUnitComponent,
     DepartmentsComponent,
     DivisionComponent,

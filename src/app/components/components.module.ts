@@ -1,4 +1,3 @@
-import { EmployeeComponent } from "./employee-table/employee.component";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { SidebarComponent } from "./sidebar/sidebar.component";
@@ -9,17 +8,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 @NgModule({
   imports: [CommonModule, RouterModule, NgbModule],
-  declarations: [
-    FooterComponent,
-    NavbarComponent,
-    SidebarComponent,
-    EmployeeComponent,
-  ],
-  exports: [
-    FooterComponent,
-    NavbarComponent,
-    SidebarComponent,
-    EmployeeComponent,
-  ],
+  declarations: [FooterComponent, NavbarComponent, SidebarComponent],
+  exports: [FooterComponent, NavbarComponent, SidebarComponent],
 })
 export class ComponentsModule {}
