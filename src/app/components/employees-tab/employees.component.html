@@ -6,10 +6,146 @@
           <div class="row align-items-center">
             <div class="col">
               <h3 class="mb-0">Employees</h3>
+              <h4 class="text-muted">Filters</h4>
             </div>
           </div>
         </div>
-        <div class="card-body"><employee></employee></div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="form-group">
+                <label class="form-control-label" for="input-first-name"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="input-first-name"
+                  class="form-control form-control-alternative"
+                  placeholder="First Name"
+                  value="First Name"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="form-group">
+                <label class="form-control-label" for="input-last-name"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="input-last-name"
+                  class="form-control form-control-alternative"
+                  placeholder="Last Name"
+                  value="Last Name"
+                />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <label class="form-control-label" for="input-hire-date"
+                  >Hire Date From</label
+                >
+                <input
+                  type="date"
+                  id="input-hire-date"
+                  class="form-control form-control-alternative"
+                  placeholder=""
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <label class="form-control-label" for="input-hire-date-to">
+                  Hire Date To</label
+                >
+                <input
+                  type="date"
+                  id="input-hire-date-to"
+                  class="form-control form-control-alternative"
+                  placeholder=""
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-3">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <label class="form-control-label" for="input-select-country"
+                >Country</label
+              >
+              <select
+                class="form-control"
+                data-trigger
+                name="choices-country"
+                id="choices-country"
+              >
+                <option disabled selected>ALL</option>
+                <option value="2">Placeholder 1</option>
+                <option value="3">Placeholder 2</option>
+                <option value="4">Placeholder 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <label class="form-control-label" for="input-select-department"
+                >Department</label
+              >
+              <select
+                class="form-control"
+                data-trigger
+                name="choices-department"
+                id="choices-department"
+              >
+                <option disabled selected>ALL</option>
+                <option value="2">Placeholder 1</option>
+                <option value="3">Placeholder 2</option>
+                <option value="4">Placeholder 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <label class="form-control-label" for="input-select-business-unit"
+                >Business Unit</label
+              >
+              <select
+                class="form-control"
+                data-trigger
+                name="choices-business-unit"
+                id="choices-business-unit"
+              >
+                <option disabled selected>ALL</option>
+                <option value="2">Placeholder 1</option>
+                <option value="3">Placeholder 2</option>
+                <option value="4">Placeholder 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="form-group">
+              <label class="form-control-label" for="input-select-job-title"
+                >Job Title</label
+              >
+              <select
+                class="form-control"
+                data-trigger
+                name="choices-job-title"
+                id="choices-job-title"
+              >
+                <option disabled selected>ALL</option>
+                <option value="2">Placeholder 1</option>
+                <option value="3">Placeholder 2</option>
+                <option value="4">Placeholder 3</option>
+              </select>
+            </div>
+          </div>
+          <div class="row m-3"><employee></employee></div>
+        </div>
       </div>
     </div>
   </div>

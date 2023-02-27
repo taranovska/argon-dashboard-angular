@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { mockEmployees } from "src/app/fake-data/employees-mocks";
 import { RestapiService } from "./../../service/restapi.service";
 import { Employee } from "src/types/domain/employee-model.type";
+import { ColDef } from "ag-grid-community";
 
 @Component({
   selector: "employee",
@@ -9,6 +9,16 @@ import { Employee } from "src/types/domain/employee-model.type";
 })
 export class EmployeeComponent implements OnInit {
   employees: Employee[];
+
+  rowData: any[] = [
+    { id: 1, firstName: "John", lastName: "Doe", email: "email.com" },
+  ];
+  colDefs: ColDef[] = [
+    { field: "id", sortable: true, filter: true, checkboxSelection: true },
+    { field: "firstName", sortable: true, filter: true },
+    { field: "lastName", sortable: true, filter: true },
+    { field: "email", sortable: true, filter: true },
+  ];
   constructor(private service: RestapiService) {}
 
   ngOnInit() {

@@ -4,6 +4,7 @@ import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
 import { RouterModule } from "@angular/router";
 import { MatButtonModule } from "@angular/material/button";
+import { AgGridModule } from "ag-grid-angular";
 
 import { AppComponent } from "./app.component";
 import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
@@ -24,6 +25,7 @@ import { ComponentsModule } from "./components/components.module";
     ComponentsModule,
     NgbModule,
     RouterModule,
+    AgGridModule,
   ],
   declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   providers: [],

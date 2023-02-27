@@ -43,6 +43,7 @@ import { IconsCardComponent } from "src/app/components/icons/icons/icons.compone
 import { CardLayoutComponent } from "src/app/components/card-layout/card-layout.component";
 import { AccordionComponent } from "src/app/components/accordion/accordion.component";
 // import { ToastrModule } from 'ngx-toastr';
+import { AgGridModule } from "ag-grid-angular";
 
 @NgModule({
   declarations: [
@@ -90,6 +91,7 @@ import { AccordionComponent } from "src/app/components/accordion/accordion.compo
     HttpClientModule,
     NgbModule,
     ClipboardModule,
+    AgGridModule,
   ],
 })
 export class AdminLayoutModule {}

@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "json-server": "json-server --watch db.json --port 8000 --delay 1000"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +28,8 @@
     "@angular/router": "^14.2.0",
     "@ng-bootstrap/ng-bootstrap": "12.1.2",
     "@popperjs/core": "^2.11.4",
+    "ag-grid-angular": "^29.1.0",
+    "ag-grid-community": "^29.1.0",
     "bootstrap": "4.6.1",
     "chart.js": "2.9.4",
     "clipboard": "2.0.10",
