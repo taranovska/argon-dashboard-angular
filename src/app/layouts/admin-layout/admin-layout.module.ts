@@ -1,3 +1,4 @@
+import { ComponentsModule } from "./../../components/components.module";
 import { ProductCompareComponent } from "./../../components/product-compare/product-compare.component";
 import { ProfileComponent } from "./../../components/profile/profile.component";
 import { TimelineComponent } from "./../../components/timeline/timeline.component";
@@ -37,7 +38,6 @@ import { MapsComponent } from "../../pages/maps/maps.component";
 import { UserProfileComponent } from "../../pages/user-profile/user-profile.component";
 import { TablesComponent } from "../../pages/tables/tables.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { ComponentsModule } from "../../components/components.module";
 import { JobTitleComponent } from "src/app/components/job-titles-tab/job-title.component";
 import { IconsCardComponent } from "src/app/components/icons/icons/icons.component";
 import { CardLayoutComponent } from "src/app/components/card-layout/card-layout.component";
@@ -83,13 +83,13 @@ import { AccordionComponent } from "src/app/components/accordion/accordion.compo
     ModalWindowsComponent,
   ],
   imports: [
+    ComponentsModule,
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     HttpClientModule,
     NgbModule,
     ClipboardModule,
-    ComponentsModule,
   ],
 })
 export class AdminLayoutModule {}
